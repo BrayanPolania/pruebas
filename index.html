@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/favicon.png">
+    <meta name="author" content="WolTe" />
+    <meta name="description" content="Una pagina hecha por WolTe.">
+    <meta name="keywords" content="Cursor,Custom,Alien,WolTe">
+  <title>Pollo 3D</title>
+</head>
+<body>
+
+
+<div id="containerP">
+  <model-viewer 
+  bounds="tight" 
+  src="img/pollo.glb" 
+  ar 
+  ar-modes="webxr scene-viewer quick-look" 
+  camera-controls 
+  environment-image="neutral" 
+  poster="poster.webp" 
+  shadow-intensity="1">
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+  </model-viewer>
+</div>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
